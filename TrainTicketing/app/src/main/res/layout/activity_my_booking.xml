@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/drawerLayout"
+tools:context=".MyBookingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#087077"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="My booking"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bookingadapter"
+            android:layout_width="353dp"
+            android:layout_height="631dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:layout_gravity="start">
+
+    <include
+        layout="@layout/navdrawer"/>
+</RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
+

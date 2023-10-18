@@ -1,0 +1,1 @@
+export const API_URL = 'http://trainbackend-d1ac1d62e1bd.herokuapp.com';
